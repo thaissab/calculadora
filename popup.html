@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="shortcut icon" href="assets/calculadora.png">
+    <title>Calculadora</title>
+</head>
+    <body>
+        <div class="fundo">
+            <div class="fundo-calculadora">
+                <div class="barra">Calculadora</div>
+               
+                <div class="inputs">
+                    <input type="text" class="valor" value="-1">
+                    <span>x<sup>2</sup> + </span>
+                    <input type="text" class="valor" value="2">
+                    <span>x + </span>
+                    <input type="text" class="valor" value="3">
+                    <button onclick="calcular()">Calcular</button>
+                </div>
+
+
+                <div id="linha"></div>
+
+                <div class="outputs">
+                    <p id="delta">Delta: <span class="output"></span></p>
+                    <p id="x1">x1:       <span class="output"></span></p>
+                    <p id="x2">x2:       <span class="output"></span></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
